@@ -9,7 +9,7 @@
     tools:context=".ActivityB">
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/openC"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Open ActivityC"

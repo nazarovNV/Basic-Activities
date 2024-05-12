@@ -1,14 +1,32 @@
 package otus.gpb.homework.activities
 
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
+import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 
 class ActivityC : AppCompatActivity() {
+    private var openAbutton : Button? = null
+    private var openDbutton : Button? = null
+    private var closeCbutton : Button? = null
+    private var closeStackbutton : Button? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_c)
+        openAbutton = findViewById(R.id.openA)
+        openAbutton?.setOnClickListener {
+
+        }
+        openDbutton = findViewById(R.id.openD)
+        openDbutton?.setOnClickListener {
+
+        }
+        closeCbutton = findViewById(R.id.closeC)
+        closeCbutton?.setOnClickListener {
+
+        }
+        closeStackbutton = findViewById(R.id.closeStack)
+        closeStackbutton?.setOnClickListener {
+
+        }
     }
 }
