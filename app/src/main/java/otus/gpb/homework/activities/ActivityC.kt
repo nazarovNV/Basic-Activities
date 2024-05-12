@@ -1,5 +1,6 @@
 package otus.gpb.homework.activities
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
@@ -14,7 +15,8 @@ class ActivityC : AppCompatActivity() {
         setContentView(R.layout.activity_c)
         openAbutton = findViewById(R.id.openA)
         openAbutton?.setOnClickListener {
-
+            val intent = Intent(this, ActivityA::class.java)
+            startActivity(intent)
         }
         openDbutton = findViewById(R.id.openD)
         openDbutton?.setOnClickListener {
