@@ -23,6 +23,7 @@ class ActivityC : AppCompatActivity() {
         openDbutton = findViewById(R.id.openD)
         openDbutton?.setOnClickListener {
             val intent = Intent(this, ActivityD::class.java)
+            finishAffinity()
             startActivity(intent)
 
         }
@@ -33,6 +34,7 @@ class ActivityC : AppCompatActivity() {
         }
         closeStackbutton = findViewById(R.id.closeStack)
         closeStackbutton?.setOnClickListener {
+            finishAffinity()
 
         }
         Log.i(TAG, "onCreate C")
