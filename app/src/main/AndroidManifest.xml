@@ -32,7 +32,8 @@
             android:launchMode="singleTask"/>
         <activity
             android:name=".ActivityD"
-            android:exported="false" />
+            android:exported="false"
+            android:launchMode="singleTask"/>
     </application>
 
 </manifest>
