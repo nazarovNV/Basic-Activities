@@ -28,6 +28,7 @@ class ActivityC : AppCompatActivity() {
         }
         closeCbutton = findViewById(R.id.closeC)
         closeCbutton?.setOnClickListener {
+            finish()
 
         }
         closeStackbutton = findViewById(R.id.closeStack)
