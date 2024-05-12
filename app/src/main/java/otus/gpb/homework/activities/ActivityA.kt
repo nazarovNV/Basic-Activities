@@ -6,12 +6,12 @@ import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 
 class ActivityA : AppCompatActivity() {
-    private var button : Button? = null
+    private var openBbutton : Button? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_a)
-        button = findViewById(R.id.openB)
-        button?.setOnClickListener {
+        openBbutton = findViewById(R.id.openB)
+        openBbutton?.setOnClickListener {
             val intent = Intent(this, ActivityB::class.java)
 
             startActivity(intent)
