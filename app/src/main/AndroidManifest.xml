@@ -17,13 +17,15 @@
             android:exported="false" />
         <activity
             android:name=".ActivityB"
-            android:exported="false" />
+            android:exported="false"
+            android:launchMode="singleInstance"/>
         <activity
             android:name=".ActivityC"
             android:exported="false" />
         <activity
             android:name=".ActivityA"
-            android:exported="true">
+            android:exported="true"
+            android:launchMode="standard">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
