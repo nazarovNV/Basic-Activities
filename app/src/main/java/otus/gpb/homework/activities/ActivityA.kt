@@ -15,6 +15,8 @@ class ActivityA : AppCompatActivity() {
         openBbutton = findViewById(R.id.openB)
         openBbutton?.setOnClickListener {
             val intent = Intent(this, ActivityB::class.java)
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+            intent.addFlags(Intent.FLAG_ACTIVITY_MULTIPLE_TASK)
             startActivity(intent)
         }
         Log.i(TAG, "onCreate A")

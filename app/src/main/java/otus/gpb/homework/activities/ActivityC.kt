@@ -23,7 +23,8 @@ class ActivityC : AppCompatActivity() {
         openDbutton = findViewById(R.id.openD)
         openDbutton?.setOnClickListener {
             val intent = Intent(this, ActivityD::class.java)
-            finishAffinity()
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK)
             startActivity(intent)
 
         }

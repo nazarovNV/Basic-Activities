@@ -15,17 +15,16 @@
         <activity
             android:name=".ActivityA"
             android:exported="true"
-            android:launchMode="singleInstance">
+            android:launchMode="singleTask">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
             android:name=".ActivityB"
             android:exported="false"
-            android:launchMode="singleTask"/>
+            android:launchMode="standard"/>
         <activity
             android:name=".ActivityC"
             android:exported="false"
